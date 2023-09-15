@@ -1,0 +1,39 @@
+programa{
+	funcao inicio()
+	{
+    real dolar = 4.78
+    real euro = 6.19
+    real libra_esterlina = 6.19
+    real valor_a_ser_convertido
+		inteiro opcao
+
+    escreva("Bem vindo ao sistema de conversão \n")
+		escreva("Digite o valor que deseja converter: ")
+		leia(valor_a_ser_convertido)
+
+		escreva("1) dolar \n")
+		escreva("2) euro \n")
+		escreva("3) libra esterlina \n\n")
+
+		escreva("Escolha uma opção: ")
+		leia(opcao)
+		limpa()
+
+		escolha (opcao)	
+		{
+			caso 1: 
+		 		escreva ("\n Conversão para dolar: ", valor_a_ser_convertido/dolar, "\n")
+		 		pare
+		 	caso 2: 
+		 		escreva ("\n Conversão para euro: ", valor_a_ser_convertido/euro, "\n")
+		 		pare
+		 	caso 3: 
+		 		escreva ("\n Conversão para libra esterlina: ", valor_a_ser_convertido/libra_esterlina, "\n")
+		 		pare
+		 	caso contrario:
+		 		escreva ("Opção Inválida !")
+		}
+
+		escreva("\n")
+	}
+}
